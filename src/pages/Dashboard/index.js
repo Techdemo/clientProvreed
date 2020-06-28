@@ -1,10 +1,14 @@
 import React from 'react'
+import Navigation from './components/Nav/index'
 
 import { Title } from './styled'
 
 const Dashboard = () => {
   return (
-    <Title>Welkom bij Provreed</Title>
+    <>
+      <Navigation />
+      <Title>Dit is het dashboard</Title>
+    </>
   )
 }
 

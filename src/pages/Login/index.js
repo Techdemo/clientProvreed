@@ -1,5 +1,5 @@
 import React from 'react'
-import { Title } from './styled'
+import { Title, Flexbar, Form, InputSubmit, InputFields, NoAccount } from './styled'
 
 import { useForm } from "react-hook-form";
 
@@ -9,12 +9,15 @@ const LoginPage = () => {
 
  return (
     <>
-      <Title>Dit is de login page</Title>
-      <form onSubmit={handleSubmit(onSubmit)}>
-        <input name="username" placeholder="vul hier je username in" ref={register}/>
-        <input name="password" placeholder="vul hier je password in" ref={register} />
-        <input type="submit" />
-      </form>
+      <Flexbar>
+        <Title>Log in met je gegevens</Title>
+        <Form onSubmit={handleSubmit(onSubmit)}>
+          <InputFields name="username" placeholder="E-mailadres" ref={register}/>
+          <InputFields type="password" name="password" placeholder="Wachtwoord" ref={register} />
+          <InputSubmit type="submit" />
+        </Form>
+        <NoAccount>Heb je nog geen account? klik <a href='#'>hier</a> voor meer informatie.</NoAccount>
+      </Flexbar>
     </>
   )
 }

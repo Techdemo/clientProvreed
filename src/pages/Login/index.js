@@ -1,11 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Title, Flexbar, Form, InputSubmit, InputFields, NoAccount } from './styled'
 
 import { useForm } from "react-hook-form";
+import { AuthContext } from '../../context/AuthContext'
 
 const LoginPage = () => {
   const { handleSubmit, register } = useForm();
-  const onSubmit = data => console.log(data);
+  const { totalLogin } = useContext(AuthContext)
+
+  const onSubmit = data => totalLogin(data)
 
  return (
     <>

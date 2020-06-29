@@ -5,16 +5,18 @@ import theme from './theme/theme'
 import GlobalStyle from './theme/globalStyles'
 import GlobalFonts from './theme/globalFonts'
 
-// import Dashboard from './pages/Dashboard'
-import LoginPage from './pages/Login'
-import Dashboard from './pages/Dashboard'
+import Main from './Main'
+import AuthContextProvider from './context/AuthContext/index'
 
 function App() {
   return (
     <>
       <ThemeProvider theme={theme}>
-        {/* hier komt de router */}
-        <Dashboard />
+        <AuthContextProvider>
+          <main>
+            <Main />
+          </main>
+        </AuthContextProvider>
         <GlobalFonts />
         <GlobalStyle />
       </ThemeProvider>

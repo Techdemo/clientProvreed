@@ -11,7 +11,6 @@ const LoginPage = () => {
   const onSubmit = data => totalLogin(data)
 
  return (
-    <>
       <LoginCard>
         <Flexbar>
           <Title>Log in met je gegevens</Title>
@@ -23,7 +22,6 @@ const LoginPage = () => {
           <NoAccount>Heb je nog geen account? klik <a href='#'>hier</a> voor meer informatie.</NoAccount>
         </Flexbar>
       </LoginCard>
-    </>
   )
 }
 

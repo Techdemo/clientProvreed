@@ -56,3 +56,10 @@ export const NoAccount = styled.p`
   text-align: center;
   margin-top: 12px;
 `;
+
+export const LoginCard = styled.div`
+  background-color: white;
+  margin: 50px auto auto auto;
+  width: 800px;
+  border-radius: 16px;
+`;  

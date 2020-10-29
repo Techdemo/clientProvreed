@@ -4,7 +4,9 @@ export default {
     gray: '#F1F3F4',
     darkGray: '#ABACAD',
     black: '#000000',
-    white: '#FFFFFF'
+    white: '#FFFFFF',
+    orange: '#ff9200',
+    blue: '#538bff'
   },
   fonts: {
     primaryFont: 'Goldplay-Regular',

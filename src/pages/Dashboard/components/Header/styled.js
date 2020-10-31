@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Title = styled.h1`
   font-family: Goldplay-SemiBold;
-  font-size: 36px;
+  font-size: ${props => props.theme.fonts.headingSize};
   color: ${props => props.theme.colors.black};
   margin: 16px 0 8px 0;
 `;
@@ -11,9 +11,10 @@ export const Name = styled.span`
   color: ${props => props.theme.colors.orange};
 `;
 
-export const SubTitle = styled.h4`
+export const Subtitle = styled.h2`
   font-size: 20px;
-  font-family: Goldplay-Regular;
+  font-family: ${props => props.theme.fonts.primaryFont};
+  font-size: ${props => props.theme.fonts.subheadingSize};
   color: ${props => props.theme.colors.black};
 `;
 
@@ -24,13 +25,18 @@ export const PrimaryButton = styled.button `
   border-radius:40px;
   border: none;
   font-size: 16px; 
-  font-family: ${props => props.theme.fonts.boldFont};
+  font-family: Goldplay-SemiBold;
 `
 
-export const HeadFunctions = styled.div `
-  background-color: ${props => props.theme.colors.gray};
-`
+export const HeaderContainer = styled.div`
+  height: 40rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 1rem;
+`;
 
-export const TableFunctions = styled.div `
-  background-color: white;
-`
+export const NotificationContainer = styled.div`
+  display: flex; 
+  flex-direction: row; 
+  justify-content: space-between;
+`;

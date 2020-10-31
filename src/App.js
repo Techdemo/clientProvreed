@@ -13,9 +13,7 @@ function App() {
     <>
       <ThemeProvider theme={theme}>
         <AuthContextProvider>
-          <main>
             <Main />
-          </main>
         </AuthContextProvider>
         <GlobalFonts />
         <GlobalStyle />

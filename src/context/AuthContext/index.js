@@ -24,7 +24,6 @@ const AuthContextProvider = ({ children }) => {
     }
     setAuthData([...authData, newLogin])
   }
-
   const totalLogin = ({username, password}) => {
     const config = {
       headers: {
@@ -43,15 +42,16 @@ const AuthContextProvider = ({ children }) => {
         }
 
         setAuthData([auth])
-      }).catch(err => {console.log(err)})
-
-// oke is goed
-    // const auth = {
-    //   token,
-    //   login
-    // }
-    // setAuthData([...authData, auth])
+        return auth
+      
+      })
+      // .then((auth) => {
+      //   //flikker de auth data in een cookie. 
+      // })
+      .catch(err => {console.log(err)})
   }
+
+
 
   return (
     <AuthContext.Provider value={{ authData, addToken, setLoggedIn, totalLogin, setAuthData  }}>

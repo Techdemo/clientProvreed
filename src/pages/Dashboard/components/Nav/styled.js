@@ -2,11 +2,10 @@ import styled from 'styled-components';
 
 export const NavigationContainer = styled.nav`
   width: 100%;
-  height: 40px;
+  height: 60px;
   display: flex;
   flex-direction: row;
   background-color: ${props => props.theme.colors.white};
-  margin-top: 10px;
 `
 
 export const NavigationContent = styled.div`

@@ -10,6 +10,7 @@ export default {
   },
   fonts: {
     primaryFont: 'Goldplay-Regular',
+    boldFont: 'Goldplay-SemiBold',
     headingSize: '36px',
     subheadingSize: '20px',
     textSize: '16px'

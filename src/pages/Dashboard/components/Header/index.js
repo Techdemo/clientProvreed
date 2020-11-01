@@ -9,6 +9,7 @@ const Header = ({name}) => {
     <HeaderContainer>
       <Title>Goedemiddag <Name>{name}</Name></Title>
       <Subtitle>Dit is de status van uw offertes: </Subtitle> 
+      <Subtitle>Dit is de status van uw offertes: </Subtitle> 
       <NotificationContainer>
         <NewResponses />
         <OpenResponses />
